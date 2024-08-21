@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@crime-reporting-app/shared-components": [
+        "shared-components/src/index.ts"
+      ],
+      "@libs/shared-components": ["libs/shared-components/src/index.ts"],
+      "investigator-dashboard/Routes": [
+        "apps/investigator-dashboard/src/app/remote-entry/entry.routes.ts"
+      ],
+      "public-reporting-system/Routes": [
+        "apps/public-reporting-system/src/app/remote-entry/entry.routes.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
