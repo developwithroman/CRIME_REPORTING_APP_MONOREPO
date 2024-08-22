@@ -51,7 +51,8 @@
           "env": "NX_MF_DEV_REMOTES"
         }
       ],
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "cache": true
     },
     "@nx/angular:ng-packagr-lite": {
       "cache": true,
