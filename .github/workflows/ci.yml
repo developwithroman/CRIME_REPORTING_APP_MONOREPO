@@ -1,7 +1,7 @@
 name: CI
 
-# env:
-#   NODE_OPTIONS: --max_old_space_size=6144
+env:
+  NODE_OPTIONS: --max_old_space_size=6144
 
 on:
   push:
@@ -53,7 +53,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      # - run: npx nx-cloud start-ci-run --distribute-on="4 linux-medium-js" --stop-agents-after="build"
+      - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build"
 
       - name: 'Derive appropriate SHAs for base and head for Nx affected commands'
         uses: nrwl/nx-set-shas@v4
